@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/iv_known_for"
+            android:layout_marginTop="15dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_title"
+            android:text="Title"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            app:layout_constraintTop_toBottomOf="@+id/iv_known_for"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_name"
+            android:text="name"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            app:layout_constraintTop_toBottomOf="@+id/tv_title"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_media_type"
+            android:text="Media Type"
+            android:textSize="14sp"
+            app:layout_constraintTop_toBottomOf="@+id/tv_name"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_overview"
+            android:text="Overview"
+            android:textSize="14sp"
+            app:layout_constraintTop_toBottomOf="@+id/tv_media_type"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_average_count"
+            android:text="Average Count"
+            android:textSize="14sp"
+            app:layout_constraintTop_toBottomOf="@+id/tv_release_date"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_release_date"
+            android:text="Release Date"
+            android:textSize="14sp"
+            app:layout_constraintTop_toBottomOf="@+id/tv_overview"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_popularity"
+            android:text="Title"
+            android:textSize="14sp"
+            app:layout_constraintTop_toBottomOf="@+id/tv_average_count"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
